@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+body{background-color:black;color:#efefef;font-family: 'Arimo', sans-serif;}
+#map {
+        height: 11vh;
+        height: 11vw;
+      }
