@@ -1,44 +1,31 @@
-<!doctype html>
-<html lang="en">
+Synopsis
 
-<head>
-    <meta charset="utf-8">
+At the top of the file there should be a short introduction and/ or overview that explains what the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+Code Example
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-    <script src="js/ngGeolocation.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css.css">
+Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
+Motivation
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
-<body>
-    <div class="container-fluid" ng-app="HappyHourLocator">
-        <div class="row">
-            <div class="col-md-6 text-center" ng-controller="headerDataCtrl">
-                <h1>Bar locator</h1>
-                <span class="pull-left">{{dDate | date:"EEEE"}}</span>
-                <span class="pull-right">{{dHour | date:"mediumTime"}}</span>
-                <br><span>{{position}}</span>
-                <div ng-repeat="item in lists">
-                    {{item.title}}</div>
-            </div>
-        </div>
-    </div>
-    <div id="map"></div>
+Installation
 
-    <script src="js/app.js"></script>
-    <script src="js/controllers/headerDataCtrl.js"></script>
-    <script src="js/services/locationData.js"></script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEIn-nDt86vOMwue2HYwEWEcdFLKxC4Ds&libraries=places" async defer></script> 
-</body>
+Provide code examples and explanations of how to get the project.
 
-</html>
+API Reference
+
+Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+
+Tests
+
+Describe and show how to run the tests with code examples.
+
+Contributors
+
+Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+
+License
+
+A short snippet describing the license (MIT, Apache, etc.)
